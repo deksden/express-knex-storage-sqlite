@@ -8,7 +8,45 @@ export default (app) => {
     name: 'KNEX-SQLite',
     processBeforeSaveToStorage: knexStorage.processBeforeSaveToStorage,
     processAfterLoadFromStorage: knexStorage.processAfterLoadFromStorage,
-    mapPropToKnexTable: knexStorage.mapPropToKnexTable,
+    mapPropToKnexTable: (prop, table) => {
+      switch (prop.type) {
+        case 'id':
+          table.string(prop.name, 36)
+          break
+        case 'email':
+          table.string(prop.name)
+          break
+        case 'text':
+          table.string(prop.name)
+          break
+        case 'password':
+          table.string(prop.name)
+          break
+        case 'ref':
+          table.string(prop.name, 36)
+          break
+        case 'refs':
+          table.string(prop.name, 255)
+          break
+        case 'datetime':
+          table.datetime(prop.name)
+          break
+        case 'boolean':
+          table.boolean(prop.name)
+          break
+        case 'enum':
+          table.integer(prop.name, 1)
+          break
+        case 'decimal':
+          table.decimal(prop.name, prop.precision || 8, prop.scale || 2)
+          break
+        case 'float':
+          table.float(prop.name, prop.precision || 8, prop.scale || 2)
+          break
+        default:
+          throw new Error(`invalid prop.type ${prop.type} for ${prop.name}`)
+      }
+    },
 
     initStorage: () => {
       // console.log('KNEX driver')

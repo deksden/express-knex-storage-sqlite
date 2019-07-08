@@ -2,7 +2,7 @@
   "name": "express-knex-storage-sqlite",
   "version": "0.0.3",
   "description": "Express Knex project, driver for SQLite as a storage",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
     "test": "npm run lint && npm run cover",

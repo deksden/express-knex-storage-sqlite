@@ -1,6 +1,6 @@
 {
   "name": "express-knex-storage-sqlite",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Express Knex project, driver for SQLite as a storage",
   "main": "lib/index.js",
   "scripts": {

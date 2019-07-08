@@ -24,7 +24,7 @@
     "type": "git",
     "url": "https://github.com/express-knex/express-knex-storage-sqlite.git"
   },
-  "keywords": [],
+  "keywords": [ "Express", "Knex", "storage", "SQLite", "SQLite3", "addon" ],
   "author": "",
   "license": "ISC",
   "release-it": {

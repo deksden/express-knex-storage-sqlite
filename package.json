@@ -1,6 +1,6 @@
 {
   "name": "express-knex-storage-sqlite",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Express Knex project, driver for SQLite as a storage",
   "main": "src/index.js",
   "scripts": {
@@ -24,7 +24,14 @@
     "type": "git",
     "url": "https://github.com/express-knex/express-knex-storage-sqlite.git"
   },
-  "keywords": [ "Express", "Knex", "storage", "SQLite", "SQLite3", "addon" ],
+  "keywords": [
+    "Express",
+    "Knex",
+    "storage",
+    "SQLite",
+    "SQLite3",
+    "addon"
+  ],
   "author": "",
   "license": "ISC",
   "release-it": {

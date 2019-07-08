@@ -1,10 +1,11 @@
 import KnexStorage from 'express-knex-storage'
+import Knex from 'knex'
 
 export default (app) => {
   const knexStorage = KnexStorage(app)
 
   const aStorage = {
-    db : {},
+    db: {},
     name: 'KNEX-SQLite',
     processBeforeSaveToStorage: knexStorage.processBeforeSaveToStorage,
     processAfterLoadFromStorage: knexStorage.processAfterLoadFromStorage,

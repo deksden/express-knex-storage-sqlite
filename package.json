@@ -43,7 +43,7 @@
     }
   },
   "dependencies": {
-    "knex": "^0.18.3",
+    "knex": "^0.20.0",
     "express-knex-storage": "^0.0.2"
   },
   "devDependencies": {
